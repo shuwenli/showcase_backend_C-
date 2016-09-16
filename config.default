@@ -1,0 +1,43 @@
+###############################################################################
+#
+# MLM Default Configuration File
+# 
+# NOTE: This is the default configuration file for MLM and SHOULD NOT BE 
+#       MODIFIED. If you need to customize the configuration parameters
+#       in this file, create/edit /flx/data/FMSmlm/config.appl and make 
+#       changes there as needed.
+#
+#       Configuration Parameters are represented as name/value pairs in the
+#       following format:
+#       name = value
+#
+#       A line beginning with a '#' sign is interpreted to be a comment
+#       and is ignored.
+#
+#       Static Configuration Parameters can only be changed before MLM 
+#       is started.
+#       Meta-Dynamic Configuration Parameters can be changed after MLM 
+#       is started, but before MLM's first invocation.
+#       Dynamic Configuration Parameters can be changed any time.
+#
+###############################################################################
+
+# ================= Static Configuration Parameters ===========================
+#
+Initialization_Interval = 45
+Allowable_Tolerance_Count = 3
+
+# ================= Meta-Dynamic Configuration Parameters ======================
+#
+Log_Directory = /var/flx/logs/FMSmlm
+Usage_Logfile = Usage.dat
+Error_Logfile = Error.log
+Maximum_Usage_Logfile_Size = 31457280
+Maximum_Error_Logfile_Size = 31457280
+
+#================= Dynamic Configuration Parameters ==========================
+# 
+Enable_MLM = 1
+Invocation_Interval = 60
+Tolerance_Interval = 4320
+
